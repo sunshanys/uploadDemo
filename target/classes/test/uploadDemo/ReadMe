@@ -1,3 +1,5 @@
+
+
 1.上传文件名中不能包含。(拓展名除外)
 2.支持切分的最大长度为Int的最大长度
 3.配置文件中参数信息格式如下：
@@ -17,6 +19,7 @@ hdfsSite=/etc/hdfs1/conf/hdfs-site.xml
 #与kerberos相关文件路径
 krbConf=/etc/hdfs1/conf/krb5.conf
 krbPath=/etc/hdfs1/conf/hdfs.keytab
+krbXML=/etc/hdfs1/conf/guardian-site.xml
 
 #切片大小，不加*单位为字节  每上升一个单位需要*1024 
 MaxSplitSize=2*1024*1024

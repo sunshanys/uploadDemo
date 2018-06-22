@@ -83,6 +83,10 @@ public class UploadThread implements Runnable{
 				
 				IOUtils.copyBytes(in, out, offsetLength, false);
 				
+				is.close();
+				in.close();
+				out.close();
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -91,7 +95,7 @@ public class UploadThread implements Runnable{
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}	
+		}
 		
 	
 		
